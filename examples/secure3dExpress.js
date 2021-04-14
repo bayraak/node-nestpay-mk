@@ -3,11 +3,11 @@
 
 var nodeNestpay = require('../index.js');
 var express = require('express');
-var bodyParser = require('body-parser');
-var app = express()
 
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+var app = express();
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 nestpay = new nodeNestpay({
     name: 'AKTESTAPI',

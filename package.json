@@ -1,30 +1,25 @@
 {
-  "name": "node-nestpay",
-  "version": "1.0.4",
-  "author": "Eray Cetinay <eraycetinay@gmail.com>",
+  "name": "node-nestpay-mk",
+  "version": "1.0.0",
+  "author": "Bayram Ali Basgul <bayraak@gmail.com>",
   "main": "index.js",
   "typings": "./node-nestpay.d.ts",
   "description": "A NodeJS module to interface with Nestpay Payment Gateway.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eraycetinay/node-nestpay.git"
+    "url": "https://github.com/bayraak/node-nestpay-mk.git"
   },
-  "keywords": [
-    "est",
-    "nestpay",
-    "payment",
-    "gateway",
-    "turkey"
-  ],
+  "keywords": [],
   "license": "MIT",
+  "peerDependencies": {
+    "express": "^4.17.1"
+  },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "currency-codes": "^1.1.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.3",
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2",
-    "uuid": "^3.1.0",
-    "xml2js": "^0.4.17"
+    "currency-codes": "^1.5.1",
+    "ejs": "^2.7.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "uuid": "^3.4.0",
+    "xml2js": "^0.4.23"
   }
 }

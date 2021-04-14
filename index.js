@@ -28,7 +28,7 @@ function nestpay(value) {
             'ingbank': 'https://sanalpos.ingbank.com.tr/fim/api',
             'citibank': 'https://citibank.est.com.tr/fim/api',
             'cardplus': 'https://cardplus.est.com.tr/fim/api',
-            'teb': 'https://sanalpos.teb.com.tr/fim/api'
+            'teb': 'https://sanalpos.teb.com.tr/fim/api',
         },
         endpoints3d: {
             'test': 'https://testvpos.asseco-see.com.tr/fim/est3Dgate',
