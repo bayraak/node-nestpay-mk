@@ -38,8 +38,7 @@ app.get('/', function (req, res) {
         res.send(secure3dError);
 
     });
-
-})
+});
 
 app.post('/fail', function (req, res) {
     res.send(req.body);

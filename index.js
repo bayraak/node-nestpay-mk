@@ -7,7 +7,7 @@ function nestpay(value) {
         clientId: value.clientId || '',
         storekey: value.storekey || '',
         mode: value.mode || 'P',
-        currency: value.currency || 'USD',
+        currency: value.currency || 'MKD',
         orderId: value.orderId || 'Auto',
         callbackSuccess: value.callbackSuccess || '',
         callbackFail: value.callbackFail || '',
@@ -47,7 +47,7 @@ function nestpay(value) {
             'cardplus': 'https://cardplus.est.com.tr/fim/est3Dgate',
             'teb': 'https://sanalpos.teb.com.tr/fim/est3Dgate'
         },
-        lang: value.lang || 'tr'
+        lang: value.lang || 'en'
     }
 }
 
