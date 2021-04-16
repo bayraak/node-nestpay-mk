@@ -32,7 +32,7 @@ module.exports = function (nestpay) {
                 },
                 url: that.config.endpoints3d[that.config.endpoint]
             };
-            var hashstr = data.form.clientId + data.form.oid + data.form.amount + data.form.okUrl + data.form.failUrl + data.form.rnd + (value.storekey || that.config.storekey);
+            var hashstr = data.form.clientId + data.form.oid + data.form.amount + data.form.okUrl + data.form.failUrl + data.form.rnd + (value.storekey || that.config.storekey) + "Auth";
             data.form.hash = crypto.createHash('sha1').update(hashstr).digest('base64');
 
             if ((!value.secureFormat && that.config.secureFormat == 'html') || (value.secureFormat && value.secureFormat.toLowerCase() == 'html')) {
