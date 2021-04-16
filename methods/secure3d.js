@@ -32,12 +32,20 @@ module.exports = function (nestpay) {
                 },
                 url: that.config.endpoints3d[that.config.endpoint]
             };
-            var hashstr = data.form.clientId + data.form.oid + data.form.amount + data.form.okUrl + data.form.failUrl + data.form.rnd + (value.storekey || that.config.storekey) + "Auth";
+            var hashstr = data.form.clientId +
+                data.form.oid +
+                data.form.amount +
+                data.form.okUrl +
+                data.form.failUrl +
+                "Auth" +
+                data.form.rnd +
+                (value.storekey || that.config.storekey)
+
             data.form.hash = crypto.createHash('sha1').update(hashstr).digest('base64');
 
             if ((!value.secureFormat && that.config.secureFormat == 'html') || (value.secureFormat && value.secureFormat.toLowerCase() == 'html')) {
                 var content = fs.readFileSync(require('path').resolve(__dirname, `../templates/secure.html`), 'utf8');
-                resolve(ejs.render(content, {postData: data}));
+                resolve(ejs.render(content, { postData: data }));
             }
             else {
                 resolve(data);
