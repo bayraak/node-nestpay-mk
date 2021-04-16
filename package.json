@@ -1,6 +1,6 @@
 {
   "name": "node-nestpay-mk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Bayram Ali Basgul <bayraak@gmail.com>",
   "main": "index.js",
   "typings": "./node-nestpay.d.ts",
